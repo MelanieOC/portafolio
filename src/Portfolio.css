@@ -1,52 +1,64 @@
-.grid {
-	/*padding: 20px 20px 100px 20px;*/
-	max-width: 600px;
-	margin: 10px auto;
+#proyectos .buttons{
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 30px;
+}
+#proyectos .buttons a {
 	text-align: center;
-}
-
-.grid figure {
-	margin: 0;
-	position: relative;
-}
-
-.grid figure img {
-	display: block;
-	position: relative;
-}
-
-.grid figcaption {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	padding: 20px;
-	background: #555050;
-	color: #ed4e6e;
-	display: none;
-	transition: all 2s ease-in-out;
-}
-.grid:hover figcaption{
-	display: block; 
-}
-.grid figcaption h3 {
-	margin: 0;
-	padding: 0;
-	color: #fff;
-}
-.grid figcaption a {
-	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
+	padding: 10px 25px;
+	border-radius: 6px;
 	display: inline-block;
 	background: #ed4e6e;
 	color: #fff;
-	margin: 0 20px;
+	font-size: 1.3em;
 }
-.grid figcaption a:hover{
+#proyectos .buttons a:hover{
 	text-decoration:none;
+	background: #f0899f;
 }
-.grid i {
-	font-size: 2em;
+#proyectos h3{
+	color: #f0899f;
+	text-align: center;
+}
+#proyectos i{
 	margin: 0 10px;
+	color: #ed4e7098;
+	font-size: 1.6em;
+}
+#proyectos .trabajos h2{
+ margin-bottom: 20px;
+ margin-top: 0;
+ padding-top: 0;
+}
+#proyectos .trabajos{
+	margin: 5px auto;
+	width: 90%;
+	padding: 50px;
+}
+
+#proyectos .trabajos .row{
+	margin-bottom: 60px;
+}
+#proyectos .trabajos .descrip{
+	margin: 10px 0;
+	font-size: 1.3em;
+}
+#proyectos .trabajos img{
+	margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+	#proyectos .trabajos{
+		margin: 5px auto;
+		width: 100%;
+		padding: 10px;
+	}
+	#proyectos .buttons a {
+		padding: 8px 20px;
+		border-radius: 5px;
+		font-size: 1em;
+	}
+	#proyectos .trabajos p{
+		font-size: 1.2em;
+	}
 }

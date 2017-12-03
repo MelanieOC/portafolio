@@ -26,7 +26,7 @@ const Contact = () => {
                         </a>
                     </div>
                     <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <a className="enlace" href="https://linkedin.com/in/melanie-ocharan"  target="_blank">
+                        <a className="enlace" href="https://www.linkedin.com/in/melanie-ocharan-cardenas/"  target="_blank">
                             <i className="icon fa fa-linkedin-square" ></i>
                             <div className="datos">Melanie Ocharan</div>
                         </a>

@@ -26,7 +26,7 @@ const Porcent = ({ percent, icon, brand }) => {
 const Skills = () => {
     return (
         <div className='skills' align='center'>
-            <div>
+            <div id='html'>
                 <h2>Tres poderosas herramientas</h2>
                 <div className="row">
                     <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -40,7 +40,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div >
                 <h2>Frameworks y librerías</h2>
                 <div className="row">
                     <div className="col-lg-3 col-md-3 col-sm-3 col-xs-6">

@@ -24,7 +24,6 @@ class Navbar extends Component {
         })
     }
     render() {
-        const { page } = this.props;
         const change = () => {
             this.setState({
                 open: !this.state.open

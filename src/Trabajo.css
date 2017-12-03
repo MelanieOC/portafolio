@@ -33,7 +33,7 @@
   top:0;
   left: 0;
   color: white;
-  background-color: #e437578a;
+  background-color: #ee5473e8;
   opacity: 0;
   display: flex;
   align-items: center;
@@ -42,4 +42,24 @@
 #trabajo .cajita:hover .caja_trans{
   opacity: 1;
   transition: all 1s;
+}
+@media only screen and (max-width: 814px) {
+  #trabajo i{
+    font-size: 3.5em;
+  }
+  #trabajo h3{
+    font-size: 1.2em;
+
+  }
+}
+@media only screen and (max-width: 768px) {
+  #trabajo .caja_trans{
+    font-size: 0.9em;
+  }
+  #trabajo .cajita h3{
+    margin: 10px;
+  }
+  #trabajo .cajita{
+    padding: 10px 5px;
+  }
 }

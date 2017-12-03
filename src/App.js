@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Contact from './Contact';
 import Skills from './Skills.js';
@@ -6,34 +6,13 @@ import Portfolio from './Portfolio';
 import Presentacion from './Presentacion';
 import Navbar from './Navbar';
 import Trabajo from './Trabajo';
+import Responsive from 'react-responsive';
 import MediaQuery from 'react-responsive';
 
-const Example = () => (
-  <div>
-    <div>Device Test!</div>
-    <MediaQuery query="(min-device-width: 1224px)">
-      <div>You are a desktop or laptop</div>
-      <MediaQuery query="(min-device-width: 1824px)">
-        <div>You also have a huge screen</div>
-      </MediaQuery>
-      <MediaQuery query="(max-width: 1224px)">
-        <div>You are sized like a tablet or mobile phone though</div>
-      </MediaQuery>
-    </MediaQuery>
-    <MediaQuery query="(max-device-width: 1224px)">
-      <div>You are a tablet or mobile phone</div>
-    </MediaQuery>
-    <MediaQuery query="(orientation: portrait)">
-      <div>You are portrait</div>
-    </MediaQuery>
-    <MediaQuery query="(orientation: landscape)">
-      <div>You are landscape</div>
-    </MediaQuery>
-    <MediaQuery query="(min-resolution: 2dppx)">
-      <div>You are retina</div>
-    </MediaQuery>
-  </div>
-);
+const Desktop = props => <Responsive {...props} minWidth={992} />;
+const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
+const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Default = props => <Responsive {...props} minWidth={768} />;
 
 const Angle = ({ direccion }) => {
   const mesures = { top_left: '0, 200 0, 0 200, 0', bottom_left: '200, 200 0, 200 0, 0', bottom_right: '200, 0 200, 200 0, 200', top_right: '0, 0 200, 0 200, 200' }
@@ -45,22 +24,33 @@ const Angle = ({ direccion }) => {
     </div>
   );
 }
+
+const Intro = ({ altura }) => {
+  console.log(altura);
+  return (
+    <div className='inner-container' style={{ height: altura }}>
+      <div className='name reverso'>
+        <h1>MELANIE </h1>
+        <h1 style={{ fontSize: '2em' }}>OCHARAN</h1>
+        <p>Front-end Developer Jr.</p>
+      </div>
+    </div>
+  )
+}
 //<Navbar2 page={altura} />
 const App = () => {
-  const altura = window.screen.height - 290;
+  const altura = window.screen.height;
   return (
     <div>
-      <Navbar page={altura} />
-      <section className='outer-container' id='intro' >
-        <div className='color-wrapper'>
-          <div className='inner-container' style={{ height: altura }} ref={(div) => { this.div = div }}>
-            <div className='name reverso'>
-              <h1>MELANIE </h1>
-              <h1 style={{ fontSize: '2em' }}>OCHARAN</h1>
-              <p>Front-end Developer Jr.</p>
-            </div>
-          </div>
-        </div>
+      <section className='outer-container' id='intro'>
+        <MediaQuery query="(max-device-width: 768px)">
+          <Navbar page={altura - 80} />
+          <Intro altura={altura - 80} />
+        </MediaQuery>
+        <MediaQuery query="(min-device-width: 769px)">
+          <Navbar page={altura - 250} />
+          <Intro altura={altura - 250} />
+        </MediaQuery>
       </section>
       <section className='outer-container' id='portfolio'>
         <Angle direccion='top_right' />
@@ -88,14 +78,8 @@ const App = () => {
           <Portfolio />
         </div>
       </section>
-      <section className='outer-container' id='instagram'>
-        <Angle direccion='top_left' />
-        <div className='inner-container'>
-          <h1>Hackathon</h1>
-        </div>
-      </section>
       <section id='contact'>
-        <Angle direccion='top_right' />
+        <Angle direccion='top_left' />
         <div className='inner-container'>
           <Contact />
         </div>

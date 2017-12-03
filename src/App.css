@@ -3,14 +3,19 @@
 body{
   font-family: 'Kanit', sans-serif;
 }
-
-.angle_bottom_left, .angle_top_left, .angle_bottom_right, .angle_top_right{
-  width: 100%;
-  height: 160px; }
+@media only screen and (min-width: 768px) {
+  .angle_bottom_left, .angle_top_left, .angle_bottom_right, .angle_top_right{
+    width: 100%;
+   height: 160px; }
+  }
   .angle_bottom_left svg, .angle_top_left svg, .angle_bottom_right svg, .angle_top_right svg {
     width: 100%;
     height: 100%; }
-
+@media only screen and (max-width: 768px) {
+  .angle_bottom_left, .angle_top_left, .angle_bottom_right, .angle_top_right{
+    width: 100%;
+   height: 80px; }
+  }
 #intro {
   text-align: center;
   /*background-position: top center;
@@ -20,10 +25,10 @@ body{
   }
   
 #intro .inner-container{
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 #intro .name{
   color: white;
@@ -58,10 +63,10 @@ body{
 #stats {
   background-color: #333333; }
   #stats .angle_bottom_right svg {
-    fill: white; }
+    fill: #e4e4e4; }
 
 #twitter {
-  background-color: white; }
+  background-color: #e4e4e4; }
 #twitter h1{
   color: #E43753;
   text-align: center;
@@ -79,7 +84,9 @@ a {
   background-image: url(./triangle_pattern.png); }*/
 
 .outer-container {
-  width: 100%; }
+  width: 100%;
+  padding: 0;
+border: 0; }
 
 .inner-container {
   width: 100%;
@@ -108,3 +115,5 @@ a {
   }
   #contact .angle_top_right svg {
     fill: #dcdad8; }
+    #contact .angle_top_left svg {
+      fill: #e4e4e4; }
