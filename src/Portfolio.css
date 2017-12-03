@@ -48,17 +48,26 @@
 	margin-bottom: 10px;
 }
 @media only screen and (max-width: 768px) {
+	#proyectos {
+		padding: 0;
+	}
 	#proyectos .trabajos{
 		margin: 5px auto;
 		width: 100%;
-		padding: 10px;
+		padding: 10px 0px;
 	}
 	#proyectos .buttons a {
 		padding: 8px 20px;
 		border-radius: 5px;
 		font-size: 1em;
 	}
+	#proyectos .buttons{
+		margin: 5px 0;
+	}
 	#proyectos .trabajos p{
-		font-size: 1.2em;
+		font-size: 0.9em;
+	}
+	#proyectos .trabajos h2{
+		font-size: 1.9em;
 	}
 }

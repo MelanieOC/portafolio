@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://melanieoc.github.io/pruebaaa",
+  "homepage": "http://melanieoc.github.io/portafolio",
   "dependencies": {
     "firebase": "^4.7.0",
     "react": "^16.1.1",

@@ -24,21 +24,20 @@ section.contact {
   }
   .icon{
     font-size: 68px;
-    color: white;
+  }
+  .datos{
+    font-size: 130%;
+    padding-top: 15px;
   }
   .enlace{
     text-decoration: none !important;
     color: white;
     vertical-align: middle;
   }
-  .icon:hover{
+  .contact .enlace:hover{
     color: #E64862 !important;
   }
   .redes-sociales{
     padding-bottom: 6%;
   }
-  .datos{
-    color: white;
-    font-size: 154%;
-    padding-top: 15px;
-  }
+  
