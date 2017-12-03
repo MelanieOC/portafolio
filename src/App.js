@@ -52,14 +52,14 @@ const App = () => {
           <Intro altura={altura - 250} />
         </MediaQuery>
       </section>
-      <section className='outer-container' id='portfolio'>
+      <section className='outer-container' id='aboutme'>
         <Angle direccion='top_right' />
         <div className='inner-container'>
           <Presentacion />
         </div>
         <Angle direccion='bottom_right' />
       </section>
-      <section className='outer-container' id='about'>
+      <section className='outer-container' id='how'>
         <div className='color-wrapper'>
           <div className='inner-container' align='center'>
             <Trabajo />
@@ -67,13 +67,13 @@ const App = () => {
           <Angle direccion='bottom_left' />
         </div>
       </section>
-      <section className='outer-container' id='stats'>
+      <section className='outer-container' id='skills'>
         <div className='inner-container'>
           <Skills />
         </div>
         <Angle direccion='bottom_right' />
       </section>
-      <section className='outer-container' id='twitter'>
+      <section className='outer-container' id='portfolio'>
         <div className='inner-container'>
           <Portfolio />
         </div>

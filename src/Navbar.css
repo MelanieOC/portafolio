@@ -63,7 +63,7 @@
 
 /* menu appearance*/
 #menu {
-  width: 300px;
+  width: 350px;
   height: 100%;
   padding: 75px 20px 0;
   background-color: white;
@@ -97,7 +97,7 @@
 }
 .nav2 li a {
   padding: 5px;
-  font-size: 2.2em;
+  font-size: 1.6em;
   text-align: center;
   margin: 50px 0;
   color: #888;
@@ -108,14 +108,17 @@
 .nav2 li a:focus {
   color: #e43753;
 }
-
+.nav2 a img{
+  width: 100px;
+}
 .btn-2 {
   letter-spacing: 0;
+  padding: 5px 0;
 }
 
 .btn-2:hover,
 .btn-2:active {
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .btn-2:after,

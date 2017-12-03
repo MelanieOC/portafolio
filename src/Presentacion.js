@@ -11,8 +11,10 @@ const Presentacion = () => {
                 <Row className="text-center">
                     <Col lg={8} md={8} xs={12} sm={6} className='words'>
                         <div >
-                            <p>Mi nombre es Melanie Ocharan Cardenas. Egresada de Laboratoria y egresada de Ingeniería Química en la UNSA.</p>
-                            <p>Me encanta programar, principalmente cuando se necesita pensar en un algoritmo. Uno de mis pasatiempos en resolver asertijos, rompecabezas y juegos mentales.</p>
+                            <p>Mi nombre es Melanie Ocharan Cardenas. Egresada de Laboratoria.</p>
+                            <p>Siempre me intereso el mundo tecnológico, gracias a Laboratoria pude descubrir mi talento para el codigo.</p>
+                            <p>Me encanta programar, principalmente cuando se necesita pensar en un algoritmo. Uno de mis pasatiempos es resolver asertijos, rompecabezas y juegos mentales.</p>
+                            <p>Me gusta mucho leer, siempre quiero aprender más y más.</p>
                             <p>Me gusta los retos, soy competitiva, y siempre doy lo mejor de mí. Prueba de ello son los reconocimientos que he logrado.</p>
                         </div>
                     </Col>

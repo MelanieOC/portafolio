@@ -51,23 +51,25 @@ body{
 	transform: rotate(180deg);
 	font-size: 190%;
 }
-#about {
+#how {
   text-align: center;
   background-color: white;}
-  #about .angle_top_left svg {
+
+#how  .angle_top_left svg {
     fill: #dcdad8; }
-  #about .angle_bottom_left svg {
+
+#how    .angle_bottom_left svg {
     fill: #333333; }
 
 
-#stats {
+#skills {
   background-color: #333333; }
-  #stats .angle_bottom_right svg {
+  #skills .angle_bottom_right svg {
     fill: #e4e4e4; }
 
-#twitter {
+#portfolio {
   background-color: #e4e4e4; }
-#twitter h1{
+#portfolio h1{
   color: #E43753;
   text-align: center;
   margin-bottom: 50px;
@@ -95,13 +97,13 @@ border: 0; }
   padding: 30px;
   overflow: hidden; }
 
-#portfolio { 
+#aboutme { 
   background-attachment: fixed;
   background-image: url(./fondo1.png);
 }
-#portfolio .angle_top_right svg {
+#aboutme .angle_top_right svg {
   fill: #E43753; }
-#portfolio .angle_bottom_right svg {
+#aboutme .angle_bottom_right svg {
     fill: white; 
   }
 #instagram {
