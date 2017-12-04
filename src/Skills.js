@@ -2,6 +2,14 @@ import React from 'react';
 import './Skills.css';
 import './probando.css';
 import { Tooltip, OverlayTrigger } from 'react-bootstrap';
+import Responsive from 'react-responsive';
+import MediaQuery from 'react-responsive';
+
+const Desktop = props => <Responsive {...props} minWidth={992} />;
+const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
+const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Default = props => <Responsive {...props} minWidth={768} />;
+
 //https://codepen.io/joshuarule/pen/bIkHL?page=5
 
 const Porcent = ({ percent, icon, brand }) => {
@@ -28,17 +36,32 @@ const Skills = () => {
         <div className='skills' align='center'>
             <div id='html'>
                 <h2>Tres poderosas herramientas</h2>
-                <div className="row">
-                    <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                        <Porcent percent={70} icon={'css3-plain'} brand />
+                <Default>
+                    <div className="row">
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <Porcent percent={70} icon={'css3-plain'} brand />
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <Porcent percent={70} icon={'html5-plain'} brand />
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <Porcent percent={75} icon={'javascript-plain'} />
+                        </div>
                     </div>
-                    <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                        <Porcent percent={70} icon={'html5-plain'} brand />
+                </Default>
+                <Mobile>
+                    <div className="row tools minimizar">
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <i className="devicon-css3-plain-wordmark"></i>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <i className="devicon-html5-plain-wordmark"></i>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <i className="devicon-javascript-plain"></i>
+                        </div>
                     </div>
-                    <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                        <Porcent percent={75} icon={'javascript-plain'} />
-                    </div>
-                </div>
+                </Mobile>
             </div>
             <div >
                 <h2>Frameworks y librerías</h2>

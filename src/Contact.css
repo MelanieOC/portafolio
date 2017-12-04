@@ -10,8 +10,7 @@ section.contact {
     margin-top: -8%;
     margin-bottom: 20px;
     padding-bottom: 2%;
-  
-  }
+}
   .contactame{
     font-size: 186%;
     color: white;
@@ -28,6 +27,7 @@ section.contact {
   .datos{
     font-size: 130%;
     padding-top: 15px;
+    margin-bottom: 20px;
   }
   .enlace{
     text-decoration: none !important;

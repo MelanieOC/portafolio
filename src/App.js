@@ -44,8 +44,8 @@ const App = () => {
     <div>
       <section className='outer-container' id='intro'>
         <MediaQuery query="(max-device-width: 768px)">
-          <Navbar page={altura - 80} />
-          <Intro altura={altura - 80} />
+          <Navbar page={altura - 110} />
+          <Intro altura={altura - 110} />
         </MediaQuery>
         <MediaQuery query="(min-device-width: 769px)">
           <Navbar page={altura - 250} />

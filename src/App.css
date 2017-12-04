@@ -99,6 +99,7 @@ border: 0; }
 
 #aboutme { 
   background-attachment: fixed;
+  background-size: cover;
   background-image: url(./fondo1.png);
 }
 #aboutme .angle_top_right svg {

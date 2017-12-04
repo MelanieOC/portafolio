@@ -70,4 +70,7 @@
 	#proyectos .trabajos h2{
 		font-size: 1.9em;
 	}
+	#proyectos .row>div{
+		padding: 0;
+	}
 }
