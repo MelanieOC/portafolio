@@ -38,3 +38,9 @@
 	 padding: 30px 20px 20px 20px;
  }
 }
+@media only screen and (max-width: 768px) {
+	.description img{
+		max-width: 200px;
+	}
+}
+

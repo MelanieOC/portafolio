@@ -26,10 +26,10 @@ const Caja = ({ item }) => {
 const Trabajo = () => {
     const lista = [
         { name: 'Excelencia', icon: 'graduation-cap', description: ['Siempre doy lo mejor de mí','Enfoque a los resultados'] },
-        { name: 'Trabajo en equipo', icon: 'users', description: ['"Compartir es aprender"', 'Me gusta escuchar las ideas de otros y aprender de ello.'] },
         { name: 'Agile', icon: 'code', description: ['Generar valor continuamente','Rápido y eficaz'] },
         { name: 'Creatividad', icon: 'lightbulb-o', description: ['"Pensando fuera de la caja"', ' Buscar soluciones de forma diferente'] },
         { name: 'Diseño web', icon: 'laptop', description: [''] },
+        { name: 'Trabajo en equipo', icon: 'users', description: ['"Compartir es aprender"', 'Me gusta escuchar las ideas de otros y aprender de ello.'] },
         { name: 'Diseño Responsive', icon: 'mobile', description: ['¿Quién no usa un smartphone?'] },
         { name: 'Autodidacta', icon: 'search ', description: ['"Aprender a aprender"', 'Aprendizaje continuo'] },
         { name: 'Feedback', icon: 'refresh', description: ['Retroalimentación','Mejora continua del proyecto'] }]

@@ -28,7 +28,7 @@ const Angle = ({ direccion }) => {
 const Intro = ({ altura }) => {
   console.log(altura);
   return (
-    <div className='inner-container' style={{ height: altura }}>
+    <div className='inner-container' >
       <div className='name reverso'>
         <h1>MELANIE </h1>
         <h1 style={{ fontSize: '2em' }}>OCHARAN</h1>
@@ -44,13 +44,12 @@ const App = () => {
     <div>
       <section className='outer-container' id='intro'>
         <MediaQuery query="(max-device-width: 768px)">
-          <Navbar page={altura - 110} />
-          <Intro altura={altura - 110} />
+          <Navbar page={altura - 110} />        
         </MediaQuery>
         <MediaQuery query="(min-device-width: 769px)">
           <Navbar page={altura - 250} />
-          <Intro altura={altura - 250} />
         </MediaQuery>
+        <Intro  />
       </section>
       <section className='outer-container' id='aboutme'>
         <Angle direccion='top_right' />
